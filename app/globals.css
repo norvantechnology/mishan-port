@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #06080f;
+  --foreground: #e8edf5;
+  --surface: #0d121c;
+  --muted: #94a3b8;
+  --accent: #10b981;
+  --accent-soft: rgba(16, 185, 129, 0.15);
+  --border: rgba(148, 163, 184, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-poppins), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.35);
+  color: #fff;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-padding {
+    @apply px-5 sm:px-8 lg:px-12 py-20 md:py-28;
+  }
+
+  .container-narrow {
+    @apply mx-auto w-full max-w-6xl;
+  }
+}
