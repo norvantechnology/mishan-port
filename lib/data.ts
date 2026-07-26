@@ -2,17 +2,14 @@ export const siteConfig = {
   name: "Mishan Savaliya",
   title: "Full Stack Developer | MERN Stack Specialist",
   shortTitle: "Full Stack Developer",
-  email: "mishansavaliya843@gmail.com",
-  phone: "9558841100",
   location: "Surat, Gujarat, India",
   intro:
     "5+ years of experience building scalable web applications with React, Node.js, and modern cloud technologies. I turn ideas into fast, reliable, production-ready products.",
   bio: "I'm a Full Stack Developer with 5+ years of experience specializing in the MERN stack (MongoDB, Express, React, Node.js). I've worked across startups and agencies building automation platforms, booking systems, payment-integrated SaaS products, and real-time applications. I enjoy solving real business problems with clean, scalable code and have hands-on experience with AWS deployment, third-party API integrations, and AI-powered features.",
   languages: ["English", "Hindi", "Gujarati"],
   socials: {
-    email: "mailto:mishansavaliya843@gmail.com",
-    linkedin: "https://linkedin.com/in/your-profile",
-    github: "https://github.com/your-username",
+    linkedin: "https://www.linkedin.com/in/mishan-savaliya/",
+    github: "https://github.com/mishan843",
   },
   url: "https://your-domain.vercel.app",
 };
@@ -23,7 +20,6 @@ export const navLinks = [
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
 ] as const;
 
 export const stats = [

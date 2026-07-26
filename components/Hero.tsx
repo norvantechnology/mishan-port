@@ -2,12 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
 import { siteConfig } from "@/lib/data";
 import { GithubIcon, LinkedinIcon } from "@/components/SocialIcons";
 
 const socials = [
-  { href: siteConfig.socials.email, icon: Mail, label: "Email" },
   { href: siteConfig.socials.linkedin, icon: LinkedinIcon, label: "LinkedIn" },
   { href: siteConfig.socials.github, icon: GithubIcon, label: "GitHub" },
 ];
@@ -72,15 +70,6 @@ export default function Hero() {
               className="rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-background shadow-glow transition hover:shadow-glow-sm"
             >
               View Projects
-            </motion.button>
-            <motion.button
-              type="button"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => scrollTo("#contact")}
-              className="rounded-lg border border-border bg-transparent px-6 py-3 text-sm font-semibold text-foreground transition hover:border-accent hover:shadow-glow-sm"
-            >
-              Contact Me
             </motion.button>
           </div>
 

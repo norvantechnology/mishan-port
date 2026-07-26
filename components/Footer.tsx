@@ -1,11 +1,9 @@
 "use client";
 
-import { Mail } from "lucide-react";
 import { siteConfig } from "@/lib/data";
 import { GithubIcon, LinkedinIcon } from "@/components/SocialIcons";
 
 const socials = [
-  { href: siteConfig.socials.email, icon: Mail, label: "Email" },
   { href: siteConfig.socials.linkedin, icon: LinkedinIcon, label: "LinkedIn" },
   { href: siteConfig.socials.github, icon: GithubIcon, label: "GitHub" },
 ];
@@ -27,8 +25,8 @@ export default function Footer() {
             <a
               key={label}
               href={href}
-              target={href.startsWith("http") ? "_blank" : undefined}
-              rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={label}
               className="text-muted transition hover:text-accent"
             >
